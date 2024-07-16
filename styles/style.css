@@ -1,6 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    height: auto;
+}
+
+header {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* shared style */
+.yellow {
+    color: #FF5400;  
+}
+.btn-primary {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #FF5400;
+    border: none;
+}
+
+/* navbar section start here   */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nav-text {
+    display: flex;
+}
+
+.nav-text img {
+    margin-right: 20px;
+}
+
+.brand-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* navbar section end here   */
+/* navbar section start here   */
+
+.hero-section {
+    height: 31rem;
+    background-image: url('../images/banner.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.hero-input{
+    margin-top:40px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur;
+    border-radius: 8px;
+}
+.hero-description {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 40rem;
+}
+
+.hero-input input,
+.hero-input select {
+    width: 10rem;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+.hero-input input::placeholder, select {
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.fa-solid{
+    display: none;
+ }
+
+/* navbar section end here   */
+
+
+/* responsive for mobile */
+@media screen and (max-width: 576px){
+
+    .nav-menu{
+        display: none;
+    }
+    .hero-section {
+        width: 100%;
+    }
+    nav>i{
+       font-size: 2rem;;
+    }
+    .brand-title{
+        font-size: 2rem;
+    }
+    .hero-title{
+        font-size: 1.8rem;
+    }
+    .hero-description{
+        font-size: 0.8rem;
+        width: 18rem;
+    }
+    .btn-primary,
+    .hero-input input,
+    .hero-input select {
+        margin-bottom: 20px;
+        width: 18rem;
+        
+    }
+    .hero-input{
+        margin:  10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-solid{
+        display: block;
+     }
 }
