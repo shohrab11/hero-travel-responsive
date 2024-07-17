@@ -232,18 +232,21 @@ select {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-.section-destination-second-row{
+
+.section-destination-second-row {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 0.6fr 1fr 0.4fr;
     gap: 20px;
 }
-.section-destination-third-row{
+
+.section-destination-third-row {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1.25fr 1.75fr;
     gap: 20px;
 }
+
 .country-card {
     position: relative;
 }
@@ -261,15 +264,64 @@ select {
     line-height: normal;
 }
 
-
-
-
-
 /*destination section end here   */
+/*why chose us section start here   */
+.choose-us-section {
+    margin-top: 100px;
+}
+.text-center{
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+.section-subtitle {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
+.choose-us-card-area-1 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-card-1 {
+    padding: 30px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background-color: rgba(251, 181, 99, 0.05);
+}
+
+.section-card-2 {
+    padding: 30px 20px;
+    border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.section-card-3{
+    margin-top:20px;
+    width: 50%;
+    padding: 30px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background-color: rgba(251, 181, 99, 0.05);
+}
+
+
+
+
+/*why chose us section end here   */
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
-    .popular-tour {
+    .popular-tour,
+    .choose-us-card-area-1 {
         flex-direction: column;
     }
 
@@ -329,10 +381,16 @@ select {
         max-width: 100%;
         max-height: auto;
     }
-    .section-destination-first-row, .section-destination-second-row, .section-destination-third-row{
+
+    .section-destination-first-row,
+    .section-destination-second-row,
+    .section-destination-third-row {
         display: grid;
         grid-template-columns: 1fr;
 
 
+    }
+    .section-card-3{
+        width: 100%;
     }
 }
