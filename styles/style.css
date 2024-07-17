@@ -269,11 +269,13 @@ select {
 .choose-us-section {
     margin-top: 100px;
 }
-.text-center{
+
+.text-center {
     margin: 0 auto;
     text-align: center;
     width: 60%;
 }
+
 .section-subtitle {
     color: #131318;
     font-family: Mulish;
@@ -305,8 +307,9 @@ select {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background-color: rgba(41, 206, 246, 0.05);
 }
-.section-card-3{
-    margin-top:20px;
+
+.section-card-3 {
+    margin-top: 20px;
     width: 50%;
     padding: 30px 20px;
     border-radius: 16px;
@@ -314,12 +317,213 @@ select {
     background-color: rgba(251, 181, 99, 0.05);
 }
 
-
-
-
 /*why chose us section end here   */
+/* Deals discount start here */
+.deals-discount {
+    margin-top: 50px;
+}
+
+.section-content-1 {
+    margin-top: 50px;
+    background-image: url('../images/discount1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-content-2 {
+    margin-top: 50px;
+    background-image: url('../images/discount2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section-card {
+    margin: 50px;
+    padding: 20px;
+    max-width: 50%;
+    height: 340px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.card-title {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.title-color {
+    color: #FF5400;
+    margin: 0 5px;
+}
+
+.price-section {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+/* Deals discount start here */
+/* get lost end here */
+.get-lost-section {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-lost-section-text>button {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.get-lost-image {
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.subtitle-design {
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    width: 45%;
+}
+
+/* get lost end here */
+.news-letter {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-letter-image {
+    width: 58%;
+    height: 370px;
+}
+
+.news-letter-input {
+    width: 38%;
+    height: 370px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+.news-letter-image{
+    position: relative;
+}
+.news-letter-image img {
+    width: 100%;
+    height: 370px;
+}
+
+.news-letter-input input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border: none;
+
+}
+.btn{
+    width: 100%;
+}
+.news-letter-input::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.news-letter-discount {
+    width: 50%;
+    height: 120px;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    top: 54%;
+    left: 47%;
+    padding-top: 20px;   
+}
+
+.news-letter-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.news-letter-travel {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* News letter end here */
+
+/* footer start here */
+.footer{
+    max-width: 1440px;
+    height: 400px;
+    margin-top: 70px;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.fa-brands{
+    padding: 10px;
+}
+.hr{
+    width: 80%;
+}
+
+/* footer end here */
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
+
+    .news-letter,
+    .get-lost-section,
     .popular-tour,
     .choose-us-card-area-1 {
         flex-direction: column;
@@ -355,7 +559,7 @@ select {
     .hero-input input,
     .hero-input select {
         margin-bottom: 20px;
-        width: 18rem;
+        width: 100%;
 
     }
 
@@ -390,7 +594,64 @@ select {
 
 
     }
-    .section-card-3{
+
+    .section-card-3 {
         width: 100%;
+    }
+
+    .section-content-1,
+    .section-content-2 {
+        justify-content: center;
+    }
+
+    .section-card {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .section-description {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .get-lost-image {
+        width: 400px;
+    }
+
+    .get-lost-img {
+        margin: 30px auto;
+        max-width: 100%;
+    }
+
+    .news-letter-image {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .news-letter-input {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        width: 17rem;
+    }
+    .news-letter-discount {
+        width: 80%;
+        top: 54%;
+        left: 15%;
+   
     }
 }
